@@ -1,0 +1,201 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- 공통 -->
+    <string name="app_name">MYQM</string>
+    <string name="my">MY</string>
+    <string name="notice">Notification</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="setting">Setting</string>
+    <string name="confirm">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="close">Close</string>
+    <string name="select">Select</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="warning">Warning</string>
+    <string name="back_exit">The App is closed if you hit [Back].</string>
+    <string name="not_available">N/A</string>
+    <string name="bluetooth_is_not_available">Can not use Bluetooth.</string>
+    <string name="no_connected_devices_found">There is no connectable device.</string>
+    <string name="os_version_warning">Available only on Android higher than 5.0.</string>
+    <string name="scanning_devices">Searching the device. Please wait.</string>
+    <string name="ver">Ver. : </string>
+    <string name="current_version">Current version :&#160;</string>
+    <string name="latest_version">Latest version :&#160;</string>
+    <string name="unknown_error">Unknown error has occurred.</string>
+    <string name="os">OS</string>
+    <string name="mode">Mode</string>
+    <string name="pointer_mode">Pointer Mode</string>
+    <string name="scroll_mode">Scroll Mode</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="select_device">Select device</string>
+    <string name="connected_device">Connected device</string>
+    <string name="direction">Direction of use</string>
+    <string name="pointer_speed">Pointer speed</string>
+    <string name="very_slow">Very Slow</string>
+    <string name="slow">Slow</string>
+    <string name="normal">Normal</string>
+    <string name="fast">Fast</string>
+    <string name="resolution_synchronization">Resolution Synchronization</string>
+    <string name="start">Start</string>
+    <string name="saved">Saved</string>
+    <string name="save_error">Save failed.\nPlease reset and save.</string>
+    <string name="no_changes_have_been_made">No changes have been made.</string>
+    <string name="do_not_have_permission">Do not have permission.</string>
+    <string name="installed_latest_version">Latest version is installed.</string>
+    <string name="can_not_verify_the_latest_version">Can not verify the latest version.</string>
+    <string name="version_info">MYQM Version Information</string>
+    <string name="manual_input">Manual</string>
+    <string name="phonebook">Phonebook</string>
+
+    <!-- 네비게이션 바 -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- 다이얼 로그 -->
+    <string name="dialog_permission_description">You need a permission to all provisioning to use MYQM.</string>
+    <string name="dialog_save_description">Save changes and close.</string>
+
+    <!-- 연결된 기기 검색 (Scanner) -->
+    <string name="scanner_title">Select device:</string>
+    <string name="scanner_empty">There is no device to select.</string>
+    <string name="scanner_subtitle_bonded">Connected device:</string>
+    <string name="scanner_subtitle_not_bonded">Connectable device:</string>
+    <string name="scanner_permission_rationale">Android over 6.0 Marshmallow need permission to location access\ninto search Bluetooth smart device.\nYou can use Bluetooth beacon to check the location of call or user</string>
+    <string name="patch_not_support">Please select Q mouse patch.</string>
+    <string name="already_selected_device">Already selected device.</string>
+    <string name="empty_selected_device">No device selected.</string>
+
+    <!-- BLE Service -->
+    <string name="unknown_device">Unknown device</string>
+    <string name="ble_connect_error">Bluetooth connection has canceled.\nPlease select the device and reset.</string>
+    <string name="unknown_service">Unknown Service</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+
+    <!-- DFU Service -->
+    <string name="dfu_service_title">nRF Toolbox DFU Proxy</string>
+    <string name="dfu_service_update">UPGRADE</string>
+    <string name="dfu_service_dfu_mode">DFUMODE</string>
+    <string name="dfu_service_device_connecting">DEVICECONNECTING...</string>
+    <string name="dfu_service_update_success">Update Success</string>
+
+
+    <!-- 장비 선택 액티비티 -->
+    <string name="select_device_empty_device_name">Please select a device.</string>
+
+    <!-- 홈 엑티비티 -->
+    <string name="home_title">Please select the title of device.</string>
+    <string name="home_description">You can set,change or update firmware\nof ITVERS product by using MYQM.</string>
+
+    <!-- 메인 엑티비티 -->
+    <string name="main_setting">Basic setting</string>
+    <string name="main_hotkey">Hotkey setting</string>
+    <string name="main_manual">User\'s Manual</string>
+    <string name="main_firmware_upgrade">Firmware upgrade</string>
+    <string name="main_infomation">MYQM information</string>
+
+    <!-- 기본 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="setting_title">Basic setting</string>
+    <string name="setting_comment">Please select the device to set/change.</string>
+    <string name="save_change_setting_button">Save set/change</string>
+    <string name="saved_resolution">Synchronization complete.</string>
+    <string name="saved_resolution_already">Synchronization already complete.</string>
+    <string name="select_vendor">Select vendor</string>
+
+    <!-- 핫키 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="hotkey_title">Hotkey setting</string>
+    <string name="hotkey_comment">You can always easily use screen capture and flash/SOS function in smart phone by setting them to Smart Patch\&apos;s hotkey button.</string>
+    <string name="hotkey_function_introduction_title">[ FUNKEY introduction ]</string>
+    <string name="hotkey_function_introduction_comment">Q MOUSE FUNKEY provides Flash and SOS function, Q MOUSE SHOT provides screen capture function you can activate app immediately with C button by setting Q MOUSE C button\&apos;s Short or Long key to hot key.</string>
+    <string name="hotkey_how_to_setup_title">[ How to set FUNKEY ]</string>
+    <string name="hotkey_how_to_setup_comment">1.  Select [ FUNKEY download ] below the screen to install an App. If already installed you can execute it with [ FUNKEY Execute ]\n\n2.  Choose music app or Q MOUSE SHOT app to start with C short key by pressing C short key.\n\n3.  C button long click to choose app between Calendar and Q MOUSE FUNKEY.\n\n4.  If you\'re not setup hotkey, basic app for C key are Music(C short key), Browser(C double key),and Calendar(C long key)</string>
+    <string name="hotkey_app_download">[ FUNKEY Download ]</string>
+    <string name="hotkey_app_execute">[ FUNKEY Execute ]</string>
+
+    <string name="hotkey_invalid_url">Invalid url. Please try again.</string>
+    <string name="hotkey_invalid_app">Invalid app. Please try again.</string>
+    <string name="hotkey_invalid_phone_number">Invalid phone number. Please try again.</string>
+
+    <!-- Contacts 엑티비티 (PATCH, MOUSE) -->
+    <string name="hotkey_setting">Hotkey Setting</string>
+    <string name="name">Name</string>
+
+    <!-- Package 엑티비티 (PATCH, MOUSE) -->
+    <string name="app_selection">Select Application</string>
+
+    <!-- Password 엑티비티 (PATCH, MOUSE) -->
+    <string name="enter_password">Enter Password</string>
+    <string name="next">Next</string>
+
+    <!-- Device Select 엑티비티 (PATCH, MOUSE) -->
+    <string name="device_search">Device Search</string>
+    <string name="bluetooth_settings">Bluetooth Settings</string>
+    <string name="searching">Searching...</string>
+
+    <!-- 핫키 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+
+    <!-- 배터리 체크 엑티비티 (PATCH, MOUSE)
+    <string name="battery_title">Battery Check</string>
+    <string name="battery_comment" formatted="false">%s\&apos;s battery remainder.</string>
+    <string name="battery_list_name">Pairing list</string>
+    <string name="battery_unkonwn_level">\?\?</string> -->
+
+    <!-- 매뉴얼 엑티비티 (PATCH, MOUSE) -->
+    <string name="manual_title">User\'s Manual</string>
+
+    <!-- 펌웨어 업그레이드 (PATCH, MOUSE) -->
+    <string name="firmware_title">Firmware upgrade</string>
+    <string name="firmware_comment_before_upgrade">Upgrading product to newest firmware.\n\nIf the product is not a newest version the UPGRADE button activates.</string>
+    <string name="firmware_comment_upgrading">Firmware upgrading.\n\nWhile upgrading firmware, place the device near the smart phone and wait until it completes.</string>
+    <string name="firmware_comment_upgrade">Upgrading product to newest firmware. \n\nIf the product is not a newest version UPGRADE button activates.</string>
+    <string name="firmware_status_update">START</string>
+    <string name="firmware_status_fail">FAIL</string>
+    <string name="firmware_status_starting">Starting...</string>
+    <string name="firmware_status_success">SUCCESS</string>
+    <string name="firmware_update_file_not_found">Can not find update file.</string>
+    <string name="firmware_update_low_battery" formatted="false">%1$s\&apos;s battery remainder is %2$s.</string>
+    <string name="firmware_upgrade_warning">Do not detach the device or close app while firmware upgrade is completing.</string>
+    <string name="firmware_upgrade_is_complete">Upgrade is complete. Please wait.</string>
+    <string name="firmware_upgrade_is_completed">The upgrade completed successfully.</string>
+    <string name="firmware_upgrade_ready_warning">%1$s switches to upgrade mode and disconnects. Please select QM UPGRADE for the upgrade.</string>
+    <string name="firmware_upgrade_time_out">Upgrade wait time has been exceeded.</string>
+    <string name="firmware_upgrade_deny">To upgrade firmware, please recharge the device.</string>
+
+    <!-- MYQM 정보 -->
+    <string name="infomation_title">MYQM version information</string>
+    <string name="infomation_version">Ver.</string>
+    <string name="infomation_unkonwn_version">\?\?</string>
+    <string name="information_upgrade">Upgrade</string>
+
+    <!-- 추가 스트링 -->
+    <string name="can_not_be_changed">Can not be changed.</string>
+    <string name="web_address">Web Address</string>
+    <string name="selection">Selection</string>
+    <string name="choose_how_to_enter_your_phone_number">Choose how to enter your phone number.</string>
+    <string name="please_enter_a_web_address">Please enter a web address.</string>
+    <string name="please_enter_your_phone_number">Please enter your phone number.</string>
+    <string name="invalid_password">Invalid password.</string>
+    <string name="please_enter_a_password">Please enter a password.</string>
+    <string name="find_device">Find Device</string>
+    <string name="dfu">DFU</string>
+    <string name="please_select_a_device">Please select a device.</string>
+
+    <string name="hoykey_setting_is_cleared">Hotkey settings are cleared.</string>
+    <string name="hotkey_cannot_saved">Hotkey failed to save.</string>
+    <string name="new_hotkey_is_registered">New hotkeys are registered.</string>
+
+    <string name="quick_guide">Quick Guide</string>
+    <string name="device_not_found">Device not found.</string>
+    <string name="please_set_it">Please set it.</string>
+    <string name="delete_all_hotkeys">Are you sure you want to delete all the Hotkeys?</string>
+    <string name="web_address_field_is_blank">Web address field is blank.</string>
+    <string name="phone_number_field_is_blank">Phone number field is blank.</string>
+    <string name="allow_turn_on_Bluetooth">Do you allow the MyQM app to turn on Bluetooth?</string>
+
+    <string name="screen_lock">screen lock</string>
+    <string name="screen_unlock">screen unlock</string>
+
+</resources>

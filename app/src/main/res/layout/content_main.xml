@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg" >
+
+        <RelativeLayout
+            android:id="@+id/content_main_rl_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5.8"
+            android:background="@color/colorDarkGrey"
+            android:orientation="vertical">
+
+            <com.itvers.toolbox.view.HeightWrappingViewPager
+                android:id="@+id/content_main_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.itvers.toolbox.view.HeightWrappingViewPager>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/content_main_tab_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+        </RelativeLayout>
+
+        <!-- 메뉴 -->
+        <LinearLayout
+            android:id="@+id/content_main_rl_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.2"
+            android:layout_below="@+id/content_main_rl_image"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/content_main_rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <!-- 기본 설정 -->
+                <LinearLayout
+                    android:id="@+id/content_main_btn_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/com_main_md_bt_nor">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/content_main_iv_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/ic_setting" />
+
+                        <TextView
+                            android:id="@+id/content_main_tv_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/content_main_iv_setting"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/main_setting"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/content_main_iv_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/ic_bar_white" />
+
+                <!-- 핫키 설정 -->
+                <LinearLayout
+                    android:id="@+id/content_main_btn_hotkey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/com_main_md_bt_nor">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/content_main_iv_hotkey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/ic_hotkey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/content_main_iv_hotkey"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/main_hotkey"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/content_main_iv_line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_main_rl_one"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/ic_bar_white" />
+
+            <LinearLayout
+                android:id="@+id/content_main_rl_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_below="@+id/content_main_iv_line3"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <!-- Quick Guide -->
+                <LinearLayout
+                    android:id="@+id/content_main_btn_quickguide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/com_main_md_bt_nor">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/content_main_iv_battery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/ic_quickguide" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/content_main_iv_battery"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/main_manual"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/content_main_iv_line4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_bar_white" />
+
+                <!-- 펌웨어 업그레이드 -->
+                <LinearLayout
+                    android:id="@+id/content_main_btn_firmware_upgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/com_main_md_bt_nor">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/content_main_iv_firmware_upgrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/com_main_btm_bt_icon_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/content_main_iv_firmware_upgrade"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/main_firmware_upgrade"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

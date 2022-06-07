@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/cb_over" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/cb_normal" android:state_checked="false" android:state_enabled="false" />
+    <item android:drawable="@drawable/cb_normal" />
+
+</selector>

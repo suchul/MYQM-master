@@ -1,0 +1,198 @@
+<resources>
+    <!-- 공통 -->
+    <string name="app_name">MYQM</string>
+    <string name="my">MY</string>
+    <string name="notice">お知らせ</string>
+    <string name="search">検索</string>
+    <string name="cancel">キャンセル</string>
+    <string name="setting">設定</string>
+    <string name="confirm">確認</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="close">閉じる</string>
+    <string name="select">選択</string>
+    <string name="upgrade">アップデート</string>
+    <string name="warning">警告</string>
+    <string name="back_exit">[[次へ]を押すとアプリが終了します。</string>
+    <string name="not_available">N/A</string>
+    <string name="bluetooth_is_not_available">ブルートゥースが使用できません。</string>
+    <string name="no_connected_devices_found">接続可能なデバイスがありません。</string>
+    <string name="os_version_warning">Android 5.0以降のバージョンでのみ使用できます。</string>
+    <string name="scanning_devices">デバイスを検索しています。しばらくお待ちください。</string>
+    <string name="ver">Ver. : </string>
+    <string name="current_version">現在バージョン :&#160;</string>
+    <string name="latest_version">最新バージョン :&#160;</string>
+    <string name="unknown_error">不明なエラーが発生しました。</string>
+    <string name="os">OS</string>
+    <string name="mode">モード</string>
+    <string name="pointer_mode">ポインタモード</string>
+    <string name="scroll_mode">スクロールモード</string>
+    <string name="focus_mode">フォーカスモード</string>
+    <string name="select_device">デバイスの選択</string>
+    <string name="connected_device">接続されたデバイス</string>
+    <string name="direction">使用方向</string>
+    <string name="pointer_speed">ポインタースピード</string>
+    <string name="very_slow">非常に遅い</string>
+    <string name="slow">遅い</string>
+    <string name="normal">普通</string>
+    <string name="fast">速い</string>
+    <string name="resolution_synchronization">解像度の同期化</string>
+    <string name="start">スタート</string>
+    <string name="saved">保存完了</string>
+    <string name="save_error">保存できませんでした。\nもう一度設定及び保存をしてください。</string>
+    <string name="no_changes_have_been_made">変更内容がありません。</string>
+    <string name="do_not_have_permission">権限がありません。</string>
+    <string name="installed_latest_version">最新バージョンはインストール済みです。</string>
+    <string name="can_not_verify_the_latest_version">最新バージョンが確認できません。</string>
+    <string name="version_info">MYQM バージョン情報</string>
+    <string name="manual_input">直接入力</string>
+    <string name="phonebook">アドレス帳</string>
+
+    <!-- 네비게이션 바 -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- 다이얼 로그 -->
+    <string name="dialog_permission_description">全権限の設定を承認しないと、MYQMが使用できません。</string>
+    <string name="dialog_save_description">変更された内容を保存して終了します。</string>
+
+    <!-- 연결된 기기 검색 (Scanner) -->
+    <string name="scanner_title">デバイスの選択：</string>
+    <string name="scanner_empty">選択可能なデバイスがありません。</string>
+    <string name="scanner_subtitle_bonded">接続されているデバイス：</string>
+    <string name="scanner_subtitle_not_bonded">接続可能なデバイス：</string>
+    <string name="scanner_permission_rationale">Android 6.0以降のMarshmallowシステムは、ブルートゥーススマート装置を検索するために、\n装置の位置情報へのアクセスを許可しなければなりません。\nブルートゥースビーコンを使って電話及びユーザーの位置を確認することができます。</string>
+    <string name="patch_not_support">Q mouse patchの製品を選択してください。</string>
+    <string name="already_selected_device">選択済みのデバイスです。</string>
+    <string name="empty_selected_device">選択されたデバイスはありません。</string>
+
+    <!-- BLE Service -->
+    <string name="unknown_device">不明なデバイス</string>
+    <string name="ble_connect_error">ブルートゥースの接続が解除されました。\n接続デバイスを選択した後、再設定してください。</string>
+    <string name="unknown_service">不明なサービス</string>
+    <string name="unknown_characteristic">不明な特性</string>
+
+    <!-- DFU Service -->
+    <string name="dfu_service_title">nRF Toolbox DFU Proxy</string>
+    <string name="dfu_service_update">UPGRADE</string>
+    <string name="dfu_service_dfu_mode">DFUMODE</string>
+    <string name="dfu_service_device_connecting">DEVICECONNECTING...</string>
+    <string name="dfu_service_update_success">アップデートが正常に完了しました。</string>
+
+    <!-- 장비 선택 액티비티 -->
+    <string name="select_device_empty_device_name">製品を選択してください。.</string>
+
+    <!-- 홈 엑티비티 -->
+    <string name="home_title">製品名を選択してください。.</string>
+    <string name="home_description">MYQMを使ってITVERS製品の機能を\nセット及び変更、ファームウェアのアップデートも可能です。</string>
+
+    <!-- 메인 엑티비티 -->
+    <string name="main_setting">基本設定</string>
+    <string name="main_hotkey">ホットキーの設定</string>
+    <string name="main_manual">取扱説明書</string>
+    <string name="main_firmware_upgrade">ファームウェア</string>
+    <string name="main_infomation">MYQMの情報</string>
+
+    <!-- 기본 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="setting_title">基本設定</string>
+    <string name="setting_comment">設定／変更するデバイスを選択してください。</string>
+    <string name="save_change_setting_button">設定／変更内容の保存</string>
+    <string name="saved_resolution">同期化の完了</string>
+    <string name="saved_resolution_already">すでに同期化が完了されました。</string>
+    <string name="select_vendor">メーカーの選択</string>
+
+    <!-- 핫키 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="hotkey_title">ホットキーの設定</string>
+    <string name="hotkey_comment">スマートフォンで有用なスクリーンショット機能とフラッシュ・SOS機能をスマートパッチのボタンにホットキーとして設定し、いつでも手軽に呼び出して速やかに使用することができます。</string>
+    <string name="hotkey_function_introduction_title">[ ホットキー機能について ]</string>
+    <string name="hotkey_function_introduction_comment">Q MOUSE FUNKEYは、フラッシュとSOS機能を、Q MOUSE SHOTはスクリーンショット機能を提供します。Q MOUSEのCボタンのShortキーやLongキーにホットキーとして設定し、Cボタン一つですぐにアプリを起動することができます。</string>
+    <string name="hotkey_how_to_setup_title">[ ホットキーの設定方法 ]</string>
+    <string name="hotkey_how_to_setup_comment">1. 画面の下段にある[ FUNKEY ダウンロード ]ボタンを押してアプリをインストールします。既にインストールされている場合は、[ FUNKEY 実行 ]ボタンで実行して見ることができます。\n\n2. Cボタンをクリックすると、画面の下段に見えるミュージックアプリとQ MOUSE SHOTアプリのうち、Cショートキーで起動できるアプリの選択が可能。\n\n3. Cボタンを長押しすると、画面の下段に見えるカレンダーとQ MOUSE FUNKEYのうち、Cロングキーで起動できるアプリの選択が可能。\n\n4. ホットキーを設定しない場合、Cキーに基本的に割り当てされているアプリはMusic(Cショートキー）、Browser(Cダブルキー）、Calendar(Cロングキー）が基本的に割り当てられています。</string>
+    <string name="hotkey_app_download">[FUNKEYダウンロード]</string>
+    <string name="hotkey_app_execute">[ FUNKEY 実行 ]</string>
+
+    <string name="hotkey_invalid_url">無効なurlです。再入力してください。</string>
+    <string name="hotkey_invalid_app">無効なアプリです。再入力してください。</string>
+    <string name="hotkey_invalid_phone_number">無効な電話番号です。再入力してください。</string>
+
+    <!-- Contacts 엑티비티 (PATCH, MOUSE) -->
+    <string name="hotkey_setting">ホットキーの設定</string>
+    <string name="name">名前</string>
+
+    <!-- Package 엑티비티 (PATCH, MOUSE) -->
+    <string name="app_selection">アプリケーションの選択</string>
+
+    <!-- Password 엑티비티 (PATCH, MOUSE) -->
+    <string name="enter_password">パスワード入力</string>
+    <string name="next">次の</string>
+
+    <!-- Device Select 엑티비티 (PATCH, MOUSE) -->
+    <string name="device_search">機器の検索</string>
+    <string name="bluetooth_settings">Bluetooth設定</string>
+    <string name="searching">検索中...</string>
+
+    <!-- 핫키 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="reset">リセット</string>
+    <string name="save">保存</string>
+
+    <!-- 배터리 체크 엑티비티 (PATCH, MOUSE)
+    <string name="battery_title">バッテリー残量の確認</string>
+    <string name="battery_comment" formatted="false">%sのバッテリー残量を表示します。</string>
+    <string name="battery_list_name">ペアリングリスト</string>
+    <string name="battery_unkonwn_level">\?\?</string> -->
+
+    <!-- 매뉴얼 엑티비티 (PATCH, MOUSE) -->
+    <string name="manual_title">ユーザーマニュアル</string>
+
+    <!-- 펌웨어 업그레이드 (PATCH, MOUSE) -->
+    <string name="firmware_title">ファームウェアのアップデート</string>
+    <string name="firmware_comment_before_upgrade">最新ファームウェアでアップデートします。\n\n製品が最新バージョンではない場合、アップデートボタンが活性化されます。</string>
+    <string name="firmware_comment_upgrading">ファームウェアをアップデートしています。\nファームウェアのアップデート中は製品をスマートフォンの近くに置いて完了されるまでしばらくお待ちください。</string>
+    <string name="firmware_comment_upgrade">最新ファームウェアでアップデートします。\n\n製品が最新バージョンでない場合、アップデートボタンが活性化されます。</string>
+    <string name="firmware_status_update">START</string>
+    <string name="firmware_status_fail">FAIL</string>
+    <string name="firmware_status_starting">Starting...</string>
+    <string name="firmware_status_success">SUCCESS</string>
+    <string name="firmware_update_file_not_found">アップデートファイルが見つかりません。</string>
+    <string name="firmware_update_low_battery" formatted="false">%1$sのバッテリー残量は%2$sです。</string>
+    <string name="firmware_upgrade_warning">ファームウェアのアップデートが完了されるまで、デバイスを切り離したりアプリの終了などを実施しないでください。</string>
+    <string name="firmware_upgrade_is_complete">アップデートが完了しました。 お待ちください。</string>
+    <string name="firmware_upgrade_is_completed">アップデートが正常に完了しました。</string>
+    <string name="firmware_upgrade_ready_warning">%1$sがアップデートモードに切り替わり、接続が解除されます。アップデートのためにQM UPGRADEを選んでください。</string>
+    <string name="firmware_upgrade_time_out">アップデート待機がタイムアウトしました。</string>
+    <string name="firmware_upgrade_deny">アップデートを進めることができません。機器の充電後のアップデートを進めてください。</string>
+
+    <!-- MYQM 정보 -->
+    <string name="infomation_title">MYQMのバージョン情報</string>
+    <string name="infomation_version">Ver.</string>
+    <string name="infomation_unkonwn_version">\?\?</string>
+    <string name="information_upgrade">アップデート</string>
+
+    <!-- 추가 스트링 -->
+    <string name="can_not_be_changed">変更することができません。</string>
+    <string name="web_address">ウェブアドレス</string>
+    <string name="selection">選択</string>
+    <string name="choose_how_to_enter_your_phone_number">電話番号の入力方法を選択してください。</string>
+    <string name="please_enter_a_web_address">ウェブアドレスを入力してください。</string>
+    <string name="please_enter_your_phone_number">電話番号を入力してください。</string>
+    <string name="invalid_password">無効なパスワードです。</string>
+    <string name="please_enter_a_password">パスワードを入力してください。</string>
+    <string name="find_device">機器検索</string>
+    <string name="dfu">DFU</string>
+    <string name="please_select_a_device">機器を選択してください。</string>
+
+    <string name="hoykey_setting_is_cleared">ホットキーの設定値がリセットされました。</string>
+    <string name="hotkey_cannot_saved">ホットキーの保存に失敗しました。</string>
+    <string name="new_hotkey_is_registered">新しいホットキーが登録されました。</string>
+
+    <string name="quick_guide">クイックガイド</string>
+    <string name="device_not_found">デバイスが見つかりません。</string>
+    <string name="please_set_it">設定してください</string>
+    <string name="delete_all_hotkeys">すべてのホットキーを削除してもよろしいですか？</string>
+    <string name="web_address_field_is_blank">ウェブアドレスフィールドが空白です。</string>
+    <string name="phone_number_field_is_blank">電話番号フィールドは空白です。</string>
+    <string name="allow_turn_on_Bluetooth">MyQMアプリでBluetoothを有効にできますか？</string>
+
+    <string name="screen_lock">画面ロック</string>
+    <string name="screen_unlock">画面ロックの解除</string>
+</resources>

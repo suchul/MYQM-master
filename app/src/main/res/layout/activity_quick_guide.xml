@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activity.QuickGuideActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_quick_guide_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/com_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_quick_guide_ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/bt_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fontwhite"
+            android:text="@string/quick_guide"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/activity_quick_guide_view_pdf"
+        android:layout_below="@+id/activity_quick_guide_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.github.barteksc.pdfviewer.PDFView>
+
+</RelativeLayout>
+

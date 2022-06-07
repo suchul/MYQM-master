@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vendor">
+        <item>Samsung</item>
+        <item>LG</item>
+        <item>Pantech</item>
+        <item>Xiaomi</item>
+        <item>Huawei</item>
+        <item>LENOVO</item>
+        <item>VIVO</item>
+        <item>OPPO</item>
+        <item>Coolpad</item>
+        <item>ZTE</item>
+        <item>ASUS</item>
+        <item>HTC</item>
+        <item>HISENSE</item>
+        <item>TIANYU</item>
+        <item>APPLE</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="samsung">
+        <item>Samsung</item>
+        <item>Galaxy S9</item>
+        <item>Galaxy S9+</item>
+    </string-array>
+
+    <string-array name="select_key">
+        <item>输入网址</item>
+        <item>选择应用</item>
+        <item>输入电话号码</item>
+    </string-array>
+</resources>

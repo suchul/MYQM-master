@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_pairing_device_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingTop="14dp">
+
+    <TextView
+        android:id="@+id/row_pairing_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ITV_MMMMMM-MMMM"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:textColor="@color/colorGrey"
+        android:textSize="13dp" />
+</LinearLayout>

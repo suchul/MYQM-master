@@ -1,0 +1,198 @@
+<resources>
+    <!-- 공통 -->
+    <string name="app_name">MYQM</string>
+    <string name="my">MY</string>
+    <string name="notice">提醒</string>
+    <string name="search">搜索</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设定</string>
+    <string name="confirm">确认</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="close">关闭</string>
+    <string name="select">选择</string>
+    <string name="upgrade">升级</string>
+    <string name="warning">警告</string>
+    <string name="back_exit">点击[上一步]，退出应用软件。</string>
+    <string name="not_available">N/A</string>
+    <string name="bluetooth_is_not_available">无法使用蓝牙。</string>
+    <string name="no_connected_devices_found">没有找到可连接设备。</string>
+    <string name="os_version_warning">Android 5.0 以上版本才可以使用。</string>
+    <string name="scanning_devices">正在搜索设备，请稍等一下。</string>
+    <string name="ver">Ver. : </string>
+    <string name="current_version">当前版本 :&#160;</string>
+    <string name="latest_version">最新版本 :&#160;</string>
+    <string name="unknown_error">发生未知错误。</string>
+    <string name="os">OS</string>
+    <string name="mode">模式</string>
+    <string name="pointer_mode">指针模式</string>
+    <string name="scroll_mode">滚动模式</string>
+    <string name="focus_mode">焦点模式</string>
+    <string name="select_device">请选择要连接的设备</string>
+    <string name="connected_device">所连接的设备</string>
+    <string name="direction">使用方向</string>
+    <string name="pointer_speed">指针速度</string>
+    <string name="very_slow">很慢</string>
+    <string name="slow">缓慢</string>
+    <string name="normal">普通</string>
+    <string name="fast">快速</string>
+    <string name="resolution_synchronization">分辨率同步</string>
+    <string name="start">开始</string>
+    <string name="saved">保存结束</string>
+    <string name="save_error">未能成功保存。\n请重新设定并保存。</string>
+    <string name="no_changes_have_been_made">无变更的内容。</string>
+    <string name="do_not_have_permission">无权限。</string>
+    <string name="installed_latest_version">已安装最新版本。</string>
+    <string name="can_not_verify_the_latest_version">无法验证最新版本。</string>
+    <string name="version_info">MYQM版本信息</string>
+    <string name="manual_input">直接输入</string>
+    <string name="phonebook">地址簿</string>
+
+    <!-- 네비게이션 바 -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- 다이얼 로그 -->
+    <string name="dialog_permission_description">需允许所有权限设定，才可使用MYQM。</string>
+    <string name="dialog_save_description">保存变更的内容并退出。</string>
+
+    <!-- 연결된 기기 검색 (Scanner) -->
+    <string name="scanner_title">选择设备：</string>
+    <string name="scanner_empty">无可选设备。</string>
+    <string name="scanner_subtitle_bonded">已连接设备：</string>
+    <string name="scanner_subtitle_not_bonded">可连接设备：</string>
+    <string name="scanner_permission_rationale">Android 6.0之后的Marshmallow系统，可用于搜索蓝牙智能装置\n需允许访问装置的位置。\n可使用蓝牙信标确定电话与用户的位置。</string>
+    <string name="patch_not_support">请选择Q 鼠标贴片产品。</string>
+    <string name="already_selected_device">已选设备。</string>
+    <string name="empty_selected_device">未选择任何设备</string>
+
+    <!-- BLE Service -->
+    <string name="unknown_device">未知设备</string>
+    <string name="ble_connect_error">已解除蓝牙连接。.\n请选择连接设备后，重新设定。</string>
+    <string name="unknown_service">未知服务</string>
+    <string name="unknown_characteristic">未知特性</string>
+
+    <!-- DFU Service -->
+    <string name="dfu_service_title">nRF Toolbox DFU Proxy</string>
+    <string name="dfu_service_update">UPGRADE</string>
+    <string name="dfu_service_dfu_mode">DFUMODE</string>
+    <string name="dfu_service_device_connecting">连接设备...</string>
+    <string name="dfu_service_update_success">更新资料</string>
+
+    <!-- 장비 선택 액티비티 -->
+    <string name="select_device_empty_device_name">请选择一个产品。</string>
+
+    <!-- 홈 엑티비티 -->
+    <string name="home_title">请选择产品名称。</string>
+    <string name="home_description">使用MYQM，也可以对ITVERS产品的功能\n进行设定与变更、固件升级。</string>
+
+    <!-- 메인 엑티비티 -->
+    <string name="main_setting">基本设置</string>
+    <string name="main_hotkey">热键设定</string>
+    <string name="main_manual">用户手册</string>
+    <string name="main_firmware_upgrade">固件升级</string>
+    <string name="main_infomation">MYQM信息</string>
+
+    <!-- 기본 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="setting_title">基本设置</string>
+    <string name="setting_comment">请选择需设置／变更的设备。</string>
+    <string name="save_change_setting_button">保存设定／变更内容</string>
+    <string name="saved_resolution">同步完成</string>
+    <string name="saved_resolution_already">已同步完成。</string>
+    <string name="select_vendor">选择制造商</string>
+
+    <!-- 핫키 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="hotkey_title">热键设定</string>
+    <string name="hotkey_comment">若将智能手机中的画面截取功能与手电筒／SOS功能设定为智能贴片按键的热键，即可随时开启相应功能并轻松快捷地使用。</string>
+    <string name="hotkey_function_introduction_title">[ FUNKEY 功能介绍 ]</string>
+    <string name="hotkey_function_introduction_comment">Q MOUSE FUNKEY提供手电筒与SOS功能，Q MOUSE SHOT提供画面截取功能，若在Q MOUSE的C按键中的Short键或Long键中设定热键，仅用C按钮即可立即驱动应用软件。</string>
+    <string name="hotkey_how_to_setup_title">[ 如何设置 FUNKEY Apps ]</string>
+    <string name="hotkey_how_to_setup_comment">1.  单击屏幕底部的[ 下载 FUNKEY ]按钮安装应用程序。如果已经安装，您可以尝试[ 运行 FUNKEY ]。\n\n2.  快速点击C按键后，在画面中显示的音乐应用软件与Q MOUSE SHOT应用软件中，选择将要以C SHOT键执行的应用软件。\n\n3.  长按C按键后，在画面中显示的日历与Q MOUSE FUNKEY中，选择将要以C LONG键执行的应用软件。\n\n4.  若没有设定热键，C键的默认应用软件为Music(C SHOT键), Browser(C 双键), Calendar(C LONG键)。</string>
+    <string name="hotkey_app_download">[ 下载 FUNKEY ]</string>
+    <string name="hotkey_app_execute">[ 运行 FUNKEY ]</string>
+
+    <string name="hotkey_invalid_url">网址无效。 请再试一次。</string>
+    <string name="hotkey_invalid_app">应用无效。 请再试一次。</string>
+    <string name="hotkey_invalid_phone_number">电话号码无效。 请再试一次。</string>
+
+    <!-- Contacts 엑티비티 (PATCH, MOUSE) -->
+    <string name="hotkey_setting">Hotkey设置</string>
+    <string name="name">名</string>
+
+    <!-- Package 엑티비티 (PATCH, MOUSE) -->
+    <string name="app_selection">选择应用程序</string>
+
+    <!-- Password 엑티비티 (PATCH, MOUSE) -->
+    <string name="enter_password">输入密码</string>
+    <string name="next">下</string>
+
+    <!-- Device Select 엑티비티 (PATCH, MOUSE) -->
+    <string name="device_search">搜索设备</string>
+    <string name="bluetooth_settings">蓝牙设置</string>
+    <string name="searching">正在搜索...</string>
+
+    <!-- 핫키 설정 엑티비티 (PATCH, MOUSE) -->
+    <string name="reset">重置</string>
+    <string name="save">保存</string>
+
+    <!-- 배터리 체크 엑티비티 (PATCH, MOUSE)
+    <string name="battery_title">确认电池</string>
+    <string name="battery_comment" formatted="false">显示%s片电池的剩余电量。</string>
+    <string name="battery_list_name">配对列表</string>
+    <string name="battery_unkonwn_level">\?\?</string> -->
+
+    <!-- 매뉴얼 엑티비티 (PATCH, MOUSE) -->
+    <string name="manual_title">用户手册</string>
+
+    <!-- 펌웨어 업그레이드 (PATCH, MOUSE) -->
+    <string name="firmware_title">固件升级</string>
+    <string name="firmware_comment_before_upgrade">将产品升级为最新固件。\n\n若产品不是最新版本，激活UPGRADE键。</string>
+    <string name="firmware_comment_upgrading">正在升级固件。\n 升级固件时，请将产品靠近智能手机，请等待，直到完成升级。</string>
+    <string name="firmware_comment_upgrade">将产品升级为最新固件。\n\n若产品不是最新版本，激活UPGRADE按键。</string>
+    <string name="firmware_status_update">START</string>
+    <string name="firmware_status_fail">FAIL</string>
+    <string name="firmware_status_starting">Starting...</string>
+    <string name="firmware_status_success">SUCCESS</string>
+    <string name="firmware_update_file_not_found">无法找到升级文件。</string>
+    <string name="firmware_update_low_battery" formatted="false">%1$s的电池剩余电量为%2$s。</string>
+    <string name="firmware_upgrade_warning">在固件升级完成之前，请勿分离设备或退出应用软件。</string>
+    <string name="firmware_upgrade_is_complete">升级完成。 请稍候。</string>
+    <string name="firmware_upgrade_is_completed">升级成功完成。</string>
+    <string name="firmware_upgrade_ready_warning">%1$s切换到升级模式并断开连接。请选择QM UPGRADE进行升级。</string>
+    <string name="firmware_upgrade_time_out">已超出升级等待时间。</string>
+    <string name="firmware_upgrade_deny">升级无法继续。请在为设备充电后继续升级。</string>
+
+    <!-- MYQM 정보 -->
+    <string name="infomation_title">MYQM版本信息</string>
+    <string name="infomation_version">Ver.</string>
+    <string name="infomation_unkonwn_version">\?\?</string>
+    <string name="information_upgrade">升级</string>
+
+    <!-- 추가 스트링 -->
+    <string name="can_not_be_changed">无法改变</string>
+    <string name="web_address">网址</string>
+    <string name="selection">选择</string>
+    <string name="choose_how_to_enter_your_phone_number">你如何输入你的电话号码？</string>
+    <string name="please_enter_a_web_address">请输入网址。</string>
+    <string name="please_enter_your_phone_number">请输入您的电话号码。</string>
+    <string name="invalid_password">密码无效。</string>
+    <string name="please_enter_a_password">请输入您的密码。</string>
+    <string name="find_device">找到你的设备</string>
+    <string name="dfu">DFU</string>
+    <string name="please_select_a_device">请选择一个设备。</string>
+
+    <string name="hoykey_setting_is_cleared">热键设置已重置。</string>
+    <string name="hotkey_cannot_saved">热键保存失败。</string>
+    <string name="new_hotkey_is_registered">Hotkey已注册。</string>
+
+    <string name="quick_guide">快速指南</string>
+    <string name="device_not_found">没有找到设备</string>
+    <string name="please_set_it">请设置</string>
+    <string name="delete_all_hotkeys">您确定要删除所有热键吗？</string>
+    <string name="web_address_field_is_blank">网址字段为空。</string>
+    <string name="phone_number_field_is_blank">电话号码字段为空白。</string>
+    <string name="allow_turn_on_Bluetooth">您允许MyQM应用打开蓝牙吗？</string>
+
+    <string name="screen_lock">屏幕锁定</string>
+    <string name="screen_unlock">屏幕解锁</string>
+</resources>

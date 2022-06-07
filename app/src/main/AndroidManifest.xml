@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.itvers.toolbox">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="no.nordicsemi.android.LOG" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:fullBackupContent="false"
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- 인트로 -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeySettingsActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 홈 -->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 디바이스 선택 -->
+        <activity
+            android:name=".activity.SelectDeviceActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 메인 -->
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 펌웨어 -->
+        <activity
+            android:name=".activity.main.FirmwareActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <!-- 패치 세팅 -->
+        <activity
+            android:name=".activity.main.SettingPatchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 핫키 -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyPatchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 기본 정보 -->
+        <activity
+            android:name=".activity.InformationActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 유저 화면 -->
+        <activity
+            android:name=".activity.main.admin.UserActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 비밀번호 화면 -->
+        <activity
+            android:name=".activity.main.admin.PasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 웹뷰 -->
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- 주소록 리스트 -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyContactsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 설치된 패키지 리스트 -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyPackageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Quick Guide -->
+        <activity
+            android:name=".activity.QuickGuideActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 핫키 설정 (URL 입력) -->
+<!--        <activity-->
+<!--            android:name=".activity.main.hotkey.HotKeySettingsActivity"-->
+<!--            android:screenOrientation="portrait" />-->
+
+        <!-- UART Service -->
+        <service android:enabled="true" android:name=".service.UARTService" />
+
+        <!-- Notification Service -->
+        <activity android:name=".service.NotificationService"/>
+
+        <!-- DFU Service -->
+        <service
+            android:name=".service.DFUService"
+            android:exported="true"
+            android:label="@string/dfu_service_title" >
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!-- HOT KEY B Key - Short -->
+        <!--<activity-->
+            <!--android:name=".activity.main.hotkey.HotKeyBShortActivity"-->
+            <!--android:icon="@mipmap/ic_launcher_hotkey"-->
+            <!--android:theme="@style/Theme.Transparent"-->
+            <!--android:label="HOT KEY">-->
+
+            <!--<intent-filter>-->
+
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER"/>&ndash;&gt;-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.APP_EMAIL"/>-->
+                <!--<data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--&lt;!&ndash; HOT KEY B Key - Double &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name=".activity.main.hotkey.HotKeyBDoubleActivity"-->
+            <!--android:icon="@mipmap/ic_launcher_hotkey"-->
+            <!--android:theme="@style/Theme.Transparent"-->
+            <!--android:label="HOT KEY">-->
+
+            <!--<intent-filter>-->
+
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER"/>&ndash;&gt;-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.APP_MESSAGING"/>-->
+                <!--<data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!-- HOT KEY B Key - Double -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyBDoubleActivity"
+            android:icon="@mipmap/ic_launcher_hotkey"
+            android:theme="@style/Theme.Transparent"
+            android:label="HOT KEY">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.APP_BROWSER"/>
+                <data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />
+            </intent-filter>
+        </activity>
+
+        <!-- HOT KEY B Key - Long -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyBLongActivity"
+            android:icon="@mipmap/ic_launcher_hotkey"
+            android:theme="@style/Theme.Transparent"
+            android:label="HOT KEY">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.APP_MAPS"/>
+                <data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />
+            </intent-filter>
+        </activity>
+
+        <!-- HOT KEY C Key - Double -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyCDoubleActivity"
+            android:icon="@mipmap/ic_launcher_hotkey"
+            android:theme="@style/Theme.Transparent"
+            android:label="HOT KEY">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.APP_MESSAGING"/>
+                <data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />
+            </intent-filter>
+        </activity>
+
+        <!-- HOT KEY C Key - Long -->
+        <activity
+            android:name=".activity.main.hotkey.HotKeyCLongActivity"
+            android:icon="@mipmap/ic_launcher_hotkey"
+            android:theme="@style/Theme.Transparent"
+            android:label="HOT KEY">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.APP_EMAIL"/>
+                <data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".receiver.ScreenLockDeviceAdminReceiver"
+            android:label="MYQM"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/screenlock_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

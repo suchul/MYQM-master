@@ -1,0 +1,5 @@
+app/release
+.gradle/
+.idea/
+MYQM.iml
+local.properties
